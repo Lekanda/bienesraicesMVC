@@ -18,7 +18,7 @@
 4. JS
 5. 
 
-## Arquitectura
+## Otros
 
 1. MVC
 2. Active Record
