@@ -3,11 +3,14 @@
 
 ## ¿Que es Bienes Raices MVC?
 
-1. Es otra version de la web *Bienes Serevicios* pero esta vez con arquitectura web **MVC**.   
+1. Es otra version de la web *Bienes Servicios* pero esta vez con arquitectura web **MVC**.   
 
+2. Cogemos muchos archivos del proyecto anterior *Bienes Raices POO*. 
 
+## Configuracion de Servidor
 
-
+- Utlizamos el servidor nativo de php: `php -S localhost:3000`.   
+- Todo esta configurado para este servidor de  desarrollo.    
 
 ## Tecnologias usadas
 
