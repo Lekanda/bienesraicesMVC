@@ -5,7 +5,6 @@
 
 1. Es otra version de la web *Bienes Serevicios* pero esta vez con arquitectura web **MVC**.   
 
-2. 
 
 
 
@@ -16,7 +15,7 @@
 2. PHP8
 3. MYSQL
 4. JS
-5. 
+
 
 ## Otros
 
@@ -24,4 +23,4 @@
 2. Active Record
 3. Gulp
 
-> Fecha de inicio **25/04/2021**
+> Fecha de inicio **25/04/2021**. Cap 387-430 Curso HTML Total
