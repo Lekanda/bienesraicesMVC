@@ -1,0 +1,19 @@
+{
+    "name": "lekanda/bienes-raices-mvc",
+    "description": "Cuarta version de Bienes Raices con POO y MVC",
+    "type": "project",
+    "authors": [
+        {
+            "name": "lekanda",
+            "email": "abernaolao@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\" : "./classes"
+        }
+    }
+}
