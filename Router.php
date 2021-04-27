@@ -33,6 +33,7 @@
             if($fn){
                 // La url existe y hay una funcion asociada
                 // debuguear($fn);
+                // debuguear($this);
                 call_user_func($fn, $this); // es una funcion que llama a otra funcion cuando no sabemos como se llama. P ejm. No se sabe a que url ira.
             } else {
                 echo 'Pagina no encontrada';
