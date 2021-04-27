@@ -41,12 +41,16 @@
         }
 
         // Muestra una vista
-        public function render ($view){
+        public function render ($view, $datos =[]){
+            // debuguear($datos);
 
-            ob_start(); // Inicia un almacenamiento en memoria del valor
+            foreach($datos as $key => $value){
+                $$key = $value;// $$key: key es la llave y value es el valor.$$ Variable de variable. No sabemos que variable ira. Crea variables en la vista
+            }
 
+            ob_start(); // Inicia un almacenamiento en memoria del valor. Temporal
             include_once __DIR__ . "/views/$view.php";
-            $contenido = ob_get_clean();// Liimpia los datos en memoria.
+            $contenido = ob_get_clean();// Liimpia los datos en memoria despues de cogerlos.
             include_once __DIR__ . "/views/layout.php";
         }
 
