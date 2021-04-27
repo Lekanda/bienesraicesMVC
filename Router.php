@@ -39,4 +39,20 @@
                 echo 'Pagina no encontrada';
             }
         }
+
+        // Muestra una vista
+        public function render ($view){
+
+            ob_start(); // Inicia un almacenamiento en memoria
+            include __DIR__ . "/views/$view.php";
+
+            $contenido = ob_get_clean();
+
+            include __DIR__ . "/views/layout.php";
+        }
+
+
+
+
+
     }
