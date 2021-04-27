@@ -43,12 +43,11 @@
         // Muestra una vista
         public function render ($view){
 
-            ob_start(); // Inicia un almacenamiento en memoria
-            include __DIR__ . "/views/$view.php";
+            ob_start(); // Inicia un almacenamiento en memoria del valor
 
-            $contenido = ob_get_clean();
-
-            include __DIR__ . "/views/layout.php";
+            include_once __DIR__ . "/views/$view.php";
+            $contenido = ob_get_clean();// Liimpia los datos en memoria.
+            include_once __DIR__ . "/views/layout.php";
         }
 
 
