@@ -1,5 +1,7 @@
 # Bienes Raices con MVC (Model, View, Controller)
 
+> Este programa tiene 2 ramas dependiendo del servidor que se utiliza: **Laragon**, **PHP Server Dev**
+
 
 ## ¿Que es Bienes Raices MVC?
 
