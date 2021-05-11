@@ -12,8 +12,8 @@
         ?>
         
 
-        <a href="/bienesraicesPOO/admin/propiedades/crear.php" class="boton boton-verde">Nueva Propiedad</a>
-        <a href="/bienesraicesPOO/admin/vendedores/crear.php" class="boton boton-amarillo">Nuevo Vendedor</a>
+        <a href="/bienesraicesMVC/public/index.php/propiedades/crear" class="boton boton-verde">Nueva Propiedad</a>
+        <a href="/bienesraicesMVC/public/index.php/propiedades/crear" class="boton boton-amarillo">Nuevo Vendedor</a>
 
         <h2>Propiedades</h2>
         <table class="propiedades">
