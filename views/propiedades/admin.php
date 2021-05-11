@@ -3,16 +3,15 @@
         
         <?php  
             if ($resultado) {
-                
-            $mensaje = mostrarNotificacion(intval($resultado));
+                $mensaje = mostrarNotificacion(intval($resultado));
                 if ($mensaje) { ?>
-                <p class="alerta exito"><?php echo s($mensaje)?></p>
-               <?php }
+                    <p class="alerta exito"><?php echo s($mensaje)?></p>
+                <?php }
             }
         ?>
         
 
-        <a href="/bienesraicesPOO/admin/propiedades/crear.php" class="boton boton-verde">Nueva Propiedad</a>
+        <a href="/propiedades/crear" class="boton boton-verde">Nueva Propiedad</a>
         <a href="/bienesraicesPOO/admin/vendedores/crear.php" class="boton boton-amarillo">Nuevo Vendedor</a>
 
         <h2>Propiedades</h2>
@@ -32,7 +31,7 @@
                         <td> <?php echo $propiedad->id; ?> </td>
                         <td><?php echo $propiedad->titulo; ?></td>
 
-                        <td class="imagen-tabla"><img class="imagen-tabla" src="../../public/imagenes/<?php echo $propiedad->imagen; ?>" class="imagen-tabla"></td>
+                        <td class="imagen-tabla"><img class="imagen-tabla" src="imagenes/<?php echo $propiedad->imagen; ?>" class="imagen-tabla"></td>
 
                         <td><?php echo $propiedad->precio; ?>€</td>
                         <td>
