@@ -32,7 +32,7 @@
                         <td> <?php echo $propiedad->id; ?> </td>
                         <td><?php echo $propiedad->titulo; ?></td>
 
-                        <td class="imagen-tabla"><img class="imagen-tabla" src="../../imagenes/<?php echo $propiedad->imagen; ?>" class="imagen-tabla"></td>
+                        <td class="imagen-tabla"><img class="imagen-tabla" src="../../public/imagenes/<?php echo $propiedad->imagen; ?>" class="imagen-tabla"></td>
 
                         <td><?php echo $propiedad->precio; ?>€</td>
                         <td>
