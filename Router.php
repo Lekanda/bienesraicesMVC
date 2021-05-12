@@ -12,6 +12,11 @@
             $this->rutasGET[$url] = $fn;
         }
 
+        // Metodo POST que toma la urlactual y la funcion asociada.
+        public function post($url, $fn){
+            $this->rutasPOST[$url] = $fn;
+        }
+
 
 
         public function comprobarRutas(){
@@ -29,6 +34,10 @@
                 // debuguear($this->rutasGET[$urlActual]);
                 // debuguear($this->rutasGET);
                 // debuguear($fn);
+            } else {
+                // debuguear($_POST);
+                // debuguear($this);
+                $fn = $this->rutasPOST[$urlActual] ?? null;
             }
             if($fn){
                 // La url existe y hay una funcion asociada
