@@ -49,7 +49,7 @@ class ActiveRecord{
         $resultado=self::$db-> query($query); // Nos da true/False segun ha sido la conexion a DB
         // Mensaje de exito/error en guardar datos.
         if($resultado){
-            header('Location: /bienesraicesPOO/admin?resultado=1');
+            header('Location: http://localhost/bienesraicesMVC/public/index.php/admin?resultado=1');
         }
     }
 
@@ -73,7 +73,7 @@ class ActiveRecord{
         
         if($resultado){
             // Redirecionar al usuario
-            header('Location: /bienesraicesPOO/admin?resultado=2');
+            header('Location: http://localhost/bienesraicesMVC/public/index.php/admin?resultado=2');
         }
     }
 
@@ -87,7 +87,7 @@ class ActiveRecord{
 
         if ($resultado) {
             $this->borrarImagen();
-            header('Location: /bienesraicesPOO/admin?resultado=3' );
+            header('Location: http://localhost/bienesraicesMVC/public/index.php/admin?resultado=3' );
         }
     }
 
