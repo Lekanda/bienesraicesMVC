@@ -3,7 +3,7 @@
 
 define('TEMPLATES_URL', __DIR__ . '/templates');
 define('FUNCIONES_URL', __DIR__ . 'funciones.php');
-define('CARPETAS_IMAGENES', __DIR__ . '/../imagenes/');
+define('CARPETAS_IMAGENES', $_SERVER["DOCUMENT_ROOT"] . '/imagenes/');
 
 
 

@@ -2,9 +2,8 @@
    use App\Propiedad;
 
 
-//    debuguear($_SERVER);
 
-    if ($_SERVER['SCRIPT_NAME'] === "/bienesraicesPOO/anuncios.php") {
+    if ($_SERVER['SCRIPT_NAME'] === "/anuncios.php") {
         $propiedades = Propiedad::all();
     } else {
         $propiedades = Propiedad::get(3);
@@ -16,7 +15,7 @@
 <div class="contenedor-anuncios">
     <?php foreach($propiedades as $propiedad){?>
         <div class="anuncio">
-            <img loading="lazy" src="/bienesraicesPOO/imagenes/<?php echo $propiedad->imagen; ?>" alt="anuncio">
+            <img loading="lazy" src="/imagenes/<?php echo $propiedad->imagen; ?>" alt="anuncio">
 
             <div class="contenido-anuncio">
                 <h3><?php echo $propiedad->titulo; ?></h3>
