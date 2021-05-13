@@ -120,8 +120,6 @@ class PropiedadController{
                     $image->save(CARPETAS_IMAGENES . $nombreImagen);
                 }
                 
-                // debuguear($_POST);
-                // $_POST['vendedorId'] === 1; //TODO AJUSTE MIO:  $_POST['vendedorId'] === 1; 
                 
                 $propiedad->guardar();
             }
@@ -133,5 +131,24 @@ class PropiedadController{
             'errores' => $errores
         ]);
 
+    }
+
+    public static function eliminar(){
+        
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            // debuguear($_POST);
+    
+            // Validar ID
+            $id = $_POST['id'];
+            $id = filter_var($id, FILTER_VALIDATE_INT);
+            
+            if ($id) {
+                $tipo = $_POST['tipo'];
+                if (validarTipoContenido($tipo)) {
+                    $propiedad = Propiedad::find($id);
+                    $propiedad->eliminar();
+                }
+            }
+        }
     }
 }
