@@ -8,6 +8,8 @@
             </div>
         <?php endforeach; ?> 
 
+        <a href="/bienesraicesMVC/public/index.php/admin" class="boton boton-verde">Volver</a>
+
         <form class="formulario" method="POST" enctype="multipart/form-data">
             <?php include __DIR__ . '/formulario.php'; ?>
 

@@ -60,3 +60,15 @@ function mostrarNotificacion($codigo){
 
     return $mensaje;
 }
+
+// Funcion para valizar el id de la propiedad o si no es valido redireccionar
+function validarORedireccionar (string $url){
+    // Validar la URL por ID valido(INT)
+    $id= $_GET['id'];
+    $id=filter_var($id, FILTER_VALIDATE_INT);
+    if (!$id) {
+        header("Location: ${url}");
+    }
+
+    return $id;
+}
