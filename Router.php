@@ -63,7 +63,7 @@
 
             ob_start(); // Inicia un almacenamiento en memoria del valor. Temporal
             include_once __DIR__ . "/views/$view.php";
-            $contenido = ob_get_clean();// Liimpia los datos en memoria despues de cogerlos.
+            $contenido = ob_get_clean();// Limpia los datos en memoria despues de cogerlos.
             include_once __DIR__ . "/views/layout.php";
         }
 
