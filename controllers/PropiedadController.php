@@ -98,6 +98,8 @@ class PropiedadController{
         $errores = Propiedad::getErrores();
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            // debuguear($_POST);
+
             // Asignar los atributos
             $args = $_POST['propiedad'];
     

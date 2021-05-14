@@ -1,7 +1,5 @@
 <main class="contenedor seccion">
-    <h1>Crear Propiedad</h1>
-
-    <a href="/admin" class="boton boton-verde">Volver</a>
+    <h1>Actualizar Vendedor</h1>
 
     <!-- Errores -->
     <?php foreach ($errores as $error) : ?>
@@ -10,9 +8,11 @@
         </div>
     <?php endforeach; ?>
 
-    <form class="formulario" method="POST" enctype="multipart/form-data">
+    <a href="/admin" class="boton boton-verde">Volver</a>
+
+    <form class="formulario" method="POST">
         <?php include __DIR__ . '/formulario.php' ?>
 
-        <input type="submit" value="Crear Propiedad" class="boton boton-verde">
+        <input type="submit" value="Actualizar Vendedor" class="boton boton-verde">
     </form>
 </main>
