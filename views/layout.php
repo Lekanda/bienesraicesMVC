@@ -37,7 +37,7 @@
                 <div class="derecha">
                     <img class="dark-mode-boton" src="http://localhost/bienesraicesMVC/public/build/img/dark-mode.svg">
                     <nav class="navegacion">
-                        <a href="/nosotros">Nosotros</a>
+                        <a href="/bienesraicesMVC/public/index.php/nosotros">Nosotros</a>
                         <a href="/anuncios">Anuncios</a>
                         <a href="/blog">Blog</a>
                         <a href="/contacto">Contacto</a>
