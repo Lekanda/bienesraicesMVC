@@ -11,8 +11,8 @@
         <?php endforeach; ?> 
 
         <!-- Formulario -->
-        <form method="POST" class="formulario" action="/bienesraicesMVC/public/index.php/vendedores/crear" enctype="multipart/form-data">
-            <?php include '/laragon/www/bienesraicesMVC/includes/templates/formulario_vendedores.php' ?>
+        <form method="POST" class="formulario" action="/bienesraicesMVC/public/index.php/vendedores/crear">
+            <?php include  __DIR__ . '/formulario.php' ?>
             <input type="submit" value="Crear Vendedor" class="boton boton-verde">
         </form>
     </main>
