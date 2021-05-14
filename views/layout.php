@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
     // Para cerrar la conexion de autenticacion. 1º traer el $_SESSION a la pantalla donde ponemos el boton de cerrar sesion.
     if (!isset($_SESSION)) {
         session_start();
@@ -10,7 +10,7 @@
     if (!isset($inicio)) {
         $inicio = false;
     }
-?>
+?> -->
 
 
 
@@ -37,21 +37,21 @@
                 <div class="derecha">
                     <img class="dark-mode-boton" src="/build/img/dark-mode.svg">
                     <nav class="navegacion">
-                        <a href="/bienesraicesMVC/public/nosotros.php">Nosotros</a>
-                        <a href="/bienesraicesMVC/anuncios.php">Anuncios</a>
-                        <a href="/bienesraicesMVC/blog.php">Blog</a>
-                        <a href="/bienesraicesMVC/contacto.php">Contacto</a>
+                        <a href="/nosotros">Nosotros</a>
+                        <a href="/anuncios">Anuncios</a>
+                        <a href="/blog">Blog</a>
+                        <a href="/contacto">Contacto</a>
                         <?php if ($auth) : ?>
-                            <a href="/bienesraicesPOO/cerrar-sesion.php">Cerrar Sesion</a>
+                            <a href="/cerrar-sesion.php">Cerrar Sesion</a>
                         <?php else : ?>
-                            <a href="/bienesraicesPOO/login.php">Login</a>
+                            <a href="/login.php">Login</a>
                         <?php endif ?>
                     </nav>
                 </div>
                 
             </div> <!--.barra-->
 
-            <!-- <?php echo $inicio ? "<h1>Venta de Casas De Lujo y Apartamentos Exclusivos</h1>" : ''; ?> -->
+            <?php echo $inicio ? "<h1>Venta de Casas De Lujo y Apartamentos Exclusivos</h1>" : ''; ?>
 
         </div>
     </header>
