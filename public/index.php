@@ -40,7 +40,7 @@ $router->get('/entrada', [PaginasController::class, 'entrada']);
 $router->get('/contacto', [PaginasController::class, 'contacto']);
 $router->post('/contacto', [PaginasController::class, 'contacto']);
 
-
+// TODO Hacer plantilla de propiedades que valga para los dos sitios.
 
 
 

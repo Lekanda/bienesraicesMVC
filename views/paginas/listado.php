@@ -32,3 +32,4 @@
         <!--anuncio-->
     <?php } ?>
 </div>
+<!--.contenedor-anuncios-->
