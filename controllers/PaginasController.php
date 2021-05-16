@@ -67,6 +67,12 @@ class PaginasController {
     public static function contacto (Router $router) {
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            // debuguear($_POST);
+
+            $respuestas = $_POST['contacto'];
+
+
+
             //Load Composer's autoloader
             require '../vendor/autoload.php';
             
@@ -95,12 +101,21 @@ class PaginasController {
             $mail->CharSet = 'UTF-8';
 
             // Definir el contenido
-            $contenido = '<html><p>Tienes un nuevo mennsaje</p></html>';
+            $contenido = '<html>';
+            $contenido .= '<p>Tienes un nuevo mensaje</p>';
+            $contenido .= '<p>Nombre: ' . $respuestas['nombre'] . '</p>';
+            $contenido .= '<p>Email: ' . $respuestas['email'] . '</p>';
+            $contenido .= '<p>Telefono: ' . $respuestas['telefono'] . '</p>';
+            $contenido .= '<p>Mensaje: ' . $respuestas['mensaje'] . '</p>';
+            $contenido .= '<p>Vende o Compra: ' . $respuestas['tipo'] . '</p>';
+            $contenido .= '<p>Precio o Presupuesto €: ' . $respuestas['precio'] . '</p>';
+            $contenido .= '<p>Contacto preferido: ' . $respuestas['contacto'] . '</p>';
+            $contenido .= '<p>Fecha Contacto: ' . $respuestas['fecha'] . '</p>';
+            $contenido .= '<p>Hora Cita: ' . $respuestas['hora'] . '</p>';
+            $contenido .= '</html>';
 
             $mail->Body =$contenido;
             $mail->AltBody = 'Texto alternativo sin HTML';
-
-
 
             // Enviar el email
             if ($mail->send()) {
