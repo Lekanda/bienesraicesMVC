@@ -11,7 +11,7 @@
             </div>
 
             <div class="texto-entrada">
-                <a href="entrada.php">
+                <a href="entrada">
                     <h4>Terraza en el techo de tu casa</h4>
                     <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span> </p>
 
@@ -32,7 +32,7 @@
             </div>
 
             <div class="texto-entrada">
-                <a href="entrada.php">
+                <a href="entrada">
                     <h4>Guía para la decoración de tu hogar</h4>
                     <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span> </p>
 
@@ -53,7 +53,7 @@
             </div>
 
             <div class="texto-entrada">
-                <a href="entrada.php">
+                <a href="entrada">
                     <h4>Terraza en el techo de tu casa</h4>
                     <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span> </p>
 
@@ -74,7 +74,7 @@
             </div>
 
             <div class="texto-entrada">
-                <a href="entrada.php">
+                <a href="entrada">
                     <h4>Guía para la decoración de tu hogar</h4>
                     <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span> </p>
 
