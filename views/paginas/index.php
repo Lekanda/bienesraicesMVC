@@ -11,7 +11,7 @@
     ?>
 
     <div class="alinear-derecha">
-        <a href="/bienesraicesPOO/anuncios.php" class="boton-verde">Ver Todas</a>
+        <a href="/propiedades" class="boton-verde">Ver Todas</a>
     </div>
 </section>
 
