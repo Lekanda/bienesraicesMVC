@@ -50,7 +50,7 @@ class PaginasController {
     }
 
     public static function blog (Router $router) {
-        echo 'Desde blog';
+        $router->render('paginas/blog');
     }
 
     public static function entrada (Router $router) {
