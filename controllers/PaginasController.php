@@ -34,8 +34,16 @@ class PaginasController {
         ]);
     }
 
-    public static function propiedad () {
-        echo 'Desde propiedad';
+    public static function propiedad (Router $router) {
+        // debuguear($_GET);
+
+        $id = validarORedireccionar('/propiedades');
+        
+        $propiedad = Propiedad::find($id);
+
+        $router->render('paginas/propiedad',[
+            'propiedad' => $propiedad
+        ]);
     }
 
     public static function blog () {
