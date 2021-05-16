@@ -39,7 +39,7 @@
                     <nav class="navegacion">
                         <a href="/bienesraicesMVC/public/index.php/nosotros">Nosotros</a>
                         <a href="/bienesraicesMVC/public/index.php/propiedades">Anuncios</a>
-                        <a href="/blog">Blog</a>
+                        <a href="/bienesraicesMVC/public/index.php/blog">Blog</a>
                         <a href="/contacto">Contacto</a>
                         <?php if ($auth) : ?>
                             <a href="/cerrar-sesion">Cerrar Sesion</a>
