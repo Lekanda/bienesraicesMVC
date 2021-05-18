@@ -11,10 +11,11 @@
             <legend>Introduce datos de Inicio de Sesion</legend>
 
             <label for="email">E-mail</label>
-            <input type="email" placeholder="Tu Email" id="email" name="email">
+            <input type="email" placeholder="Usuario: a@a.com" id="email" name="email" >
+            <span> </span>
 
             <label for="password">Contraseña</label>
-            <input type="password" placeholder="Tu contraseña" id="password" name="password">
+            <input type="password" placeholder="Contraseña: 123456" id="password" name="password" >
         </fieldset>
         <input type="submit" value="Iniciar Sesion" class="boton boton-verde">
     </form>
