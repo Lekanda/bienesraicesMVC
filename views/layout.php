@@ -42,9 +42,9 @@
                         <a href="/bienesraicesMVC/public/index.php/blog">Blog</a>
                         <a href="/bienesraicesMVC/public/index.php/contacto">Contacto</a>
                         <?php if ($auth) : ?>
-                            <a href="/cerrar-sesion">Cerrar Sesion</a>
+                            <a href="/bienesraicesMVC/public/index.php/cerrar-sesion">Cerrar Sesion</a>
                         <?php else : ?>
-                            <a href="/login.php">Login</a>
+                            <a href="/bienesraicesMVC/public/index.php/login">Login</a>
                         <?php endif ?>
                     </nav>
                 </div>
