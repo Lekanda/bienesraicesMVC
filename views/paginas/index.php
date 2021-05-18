@@ -6,7 +6,7 @@
 
 <section class="seccion contenedor">
     <h2>Casas y Fincas en Venta</h2>
-
+    <!-- TODO Cambiar/ajustar rutas de iconos(Poner ruta completa) --> 
     <?php
         include 'listado.php';
     ?>

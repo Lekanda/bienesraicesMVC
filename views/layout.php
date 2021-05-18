@@ -64,10 +64,10 @@
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="nosotros">Nosotros</a>
-                <a href="propiedades">Anuncios</a>
-                <a href="blog">Blog</a>
-                <a href="contacto">Contacto</a>
+                <a href="/bienesraicesMVC/public/index.php/nosotros">Nosotros</a>
+                <a href="/bienesraicesMVC/public/index.php/propiedades">Anuncios</a>
+                <a href="/bienesraicesMVC/public/index.php/blog">Blog</a>
+                <a href="/bienesraicesMVC/public/index.php/contacto">Contacto</a>
             </nav>
         </div>
 

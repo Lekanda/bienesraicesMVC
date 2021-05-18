@@ -17,12 +17,25 @@
             $this->rutasPOST[$url] = $fn;
         }
 
-
-
         public function comprobarRutas(){
+
+            session_start();
+            // debuguear($_SESSION);
+            $auth =$_SESSION['login'] ?? null;
+
+            // Arreglo de rutas protegidas
+            $rutas_protegidas = ['/admin',
+                                '/propiedades/crear',
+                                '/propiedades/actualizar',
+                                '/propiedades/eliminar',
+                                '/vendedores/crear',
+                                '/vendedores/actualizar',
+                                '/vendedores/eliminar'
+
+            ];
+
             $urlActual = $_SERVER['PATH_INFO'] ?? '/';
             $metodo = $_SERVER['REQUEST_METHOD'];
-
             // debuguear($urlActual);
             // debuguear($metodo);
 
@@ -39,6 +52,13 @@
                 // debuguear($this);
                 $fn = $this->rutasPOST[$urlActual] ?? null;
             }
+
+
+            // Proteger las rutas
+            if (in_array($urlActual, $rutas_protegidas) && !$auth) {
+                header('Location: /bienesraicesMVC/public/index.php/');
+            }
+
             if($fn){
                 // La url existe y hay una funcion asociada
                 // debuguear($fn);
@@ -59,7 +79,7 @@
 
             ob_start(); // Inicia un almacenamiento en memoria del valor. Temporal
             include_once __DIR__ . "/views/$view.php";
-            $contenido = ob_get_clean();// Liimpia los datos en memoria despues de cogerlos.
+            $contenido = ob_get_clean();// Limpia los datos en memoria despues de cogerlos.
             include_once __DIR__ . "/views/layout.php";
         }
 
