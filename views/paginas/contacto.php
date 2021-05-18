@@ -1,6 +1,10 @@
 <main class="contenedor seccion">
     <h1>Contacto</h1>
 
+    <?php if ($mensaje) { ?>
+           <p class='alerta exito'> <?php echo $mensaje ?></p>
+    <?php }?>
+
     <picture>
         <source srcset="../build/img/destacada3.webp" type="image/webp">
         <source srcset="../build/img/destacada3.jpg" type="image/jpeg">
@@ -43,10 +47,10 @@
             <div class="forma-contacto">
             <!-- El name en el radius select se pone el mismo,value define que se manda -->
                 <label for="contactar-telefono">Teléfono</label>
-                <input type="radio" value="telefono" id="contactar-telefono" name="contacto[contacto]" >
+                <input type="radio" value="Telefono" id="contactar-telefono" name="contacto[contacto]" >
 
                 <label for="contactar-email">E-mail</label>
-                <input type="radio" value="email" id="contactar-email" name="contacto[contacto]" >
+                <input type="radio" value="Email" id="contactar-email" name="contacto[contacto]" >
             </div>
 
             <div id="contacto"></div>

@@ -54,7 +54,7 @@ function navegacionResponsive() {
 function mostrarMetodosContacto(e){
     const contactoDiv = document.querySelector('#contacto');
     console.log(e);
-    if (e.target.value === 'telefono') {
+    if (e.target.value === 'Telefono') {
         contactoDiv.innerHTML = `
             <label for="telefono">Numero de Teléfono</label>
             <input type="tel" placeholder="Tu Teléfono" id="telefono" name="contacto[telefono]">
