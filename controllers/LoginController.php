@@ -23,11 +23,15 @@ class LoginController{
                     $errores = Admin::getErrores();
                 } else {
                     // Verificar el Password
-
-                    // Autenticar al usuario
-
+                    $autenticado = $auth->comprobarPassword($resultado);
+                    if ($autenticado) {
+                        // Autenticar al usuario
+                        
+                    } else {
+                        // Password Incorrecto(Mensaje de error)
+                        $errores = Admin::getErrores();
+                    }
                 }
-                
             }
         }
 
