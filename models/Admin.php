@@ -58,6 +58,16 @@ class Admin extends ActiveRecord{
             self::$errores[] = 'El Password es incorrecto';
         }
         return $autenticado;
+    }
 
+
+    public function autenticar(){
+        // Iniciar sesion
+        session_start();
+        // Llenar el arreglo de sesion
+        $_SESSION['usuario'] = $this->email; // Email
+        $_SESSION['login'] = true; // Login OK
+
+        header('Location: /admin');
     }
 }

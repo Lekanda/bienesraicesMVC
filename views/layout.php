@@ -44,7 +44,7 @@
                         <?php if ($auth) : ?>
                             <a href="/cerrar-sesion">Cerrar Sesion</a>
                         <?php else : ?>
-                            <a href="/login.php">Login</a>
+                            <a href="/login">Login</a>
                         <?php endif ?>
                     </nav>
                 </div>
