@@ -17,12 +17,25 @@
             $this->rutasPOST[$url] = $fn;
         }
 
-
-
         public function comprobarRutas(){
+
+            session_start();
+            // debuguear($_SESSION);
+            $auth =$_SESSION['login'] ?? null;
+
+            // Arreglo de rutas protegidas
+            $rutas_protegidas = ['/admin',
+                                '/propiedades/crear',
+                                '/propiedades/actualizar',
+                                '/propiedades/eliminar',
+                                '/vendedores/crear',
+                                '/vendedores/actualizar',
+                                '/vendedores/eliminar'
+
+            ];
+
             $urlActual = $_SERVER['PATH_INFO'] ?? '/';
             $metodo = $_SERVER['REQUEST_METHOD'];
-
             // debuguear($urlActual);
             // debuguear($metodo);
 
@@ -38,6 +51,12 @@
                 // debuguear($_POST);
                 // debuguear($this);
                 $fn = $this->rutasPOST[$urlActual] ?? null;
+            }
+
+
+            // Proteger las rutas
+            if (in_array($urlActual, $rutas_protegidas) && !$auth) {
+                header('Location: /');
             }
 
 
