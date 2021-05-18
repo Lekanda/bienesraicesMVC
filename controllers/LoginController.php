@@ -41,7 +41,13 @@ class LoginController{
     }
     
     public static function logout(Router $router){
-        echo 'Desde Logout';
+        session_start();
+        // debuguear($_SESSION);
+        
+        $_SESSION = [];
+        // debuguear($_SESSION);
+
+        header('Location: /');
 
     }
 
