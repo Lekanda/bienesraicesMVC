@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/../includes/app.php';
 
+use Controllers\LoginController;
 use MVC\Router;
 use Controllers\PropiedadController;
 use Controllers\VendedorController;
@@ -41,6 +42,13 @@ $router->get('/contacto', [PaginasController::class, 'contacto']);
 $router->post('/contacto', [PaginasController::class, 'contacto']);
 
 // TODO Hacer plantilla de propiedades que valga para los dos sitios.
+
+
+
+// Rutas Autenticacion
+$router->get('/login', [LoginController::class, 'login']);
+$router->post('/login', [LoginController::class, 'login']);
+$router->get('/logout', [LoginController::class, 'logout']);
 
 
 
