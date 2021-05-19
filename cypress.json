@@ -1,4 +1,5 @@
 {
+    "baseUrl" : "http://localhost/bienesraicesMVC",
     "viewportWidth": 1200,
-    "viewportHeight": 1060
+    "viewportHeight": 3060
 }

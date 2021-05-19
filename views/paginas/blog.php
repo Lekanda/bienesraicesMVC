@@ -4,8 +4,8 @@
         <article class="entrada-blog">
             <div class="imagen">
                 <picture>
-                    <source srcset="../build/img/blog1.webp" type="image/webp">
-                    <source srcset="../build/img/blog1.jpg" type="image/jpeg">
+                    <source srcset="http://localhost/bienesraicesMVC/public/build/img/blog1.webp" type="image/webp">
+                    <source srcset="http://localhost/bienesraicesMVC/public/build/img/blog1.jpg" type="image/jpeg">
                     <img loading="lazy" src="build/img/blog1.jpg" alt="Texto Entrada Blog">
                 </picture>
             </div>
@@ -25,8 +25,8 @@
         <article class="entrada-blog">
             <div class="imagen">
                 <picture>
-                    <source srcset="../build/img/blog2.webp" type="image/webp">
-                    <source srcset="../build/img/blog2.jpg" type="image/jpeg">
+                    <source srcset="http://localhost/bienesraicesMVC/public/build/img/blog2.webp" type="image/webp">
+                    <source srcset="http://localhost/bienesraicesMVC/public/build/img/blog2.jpg" type="image/jpeg">
                     <img loading="lazy" src="build/img/blog2.jpg" alt="Texto Entrada Blog">
                 </picture>
             </div>
@@ -46,8 +46,8 @@
         <article class="entrada-blog">
             <div class="imagen">
                 <picture>
-                    <source srcset="../build/img/blog3.webp" type="image/webp">
-                    <source srcset="../build/img/blog3.jpg" type="image/jpeg">
+                    <source srcset="http://localhost/bienesraicesMVC/public/build/img/blog3.webp" type="image/webp">
+                    <source srcset="http://localhost/bienesraicesMVC/public/build/img/blog3.jpg" type="image/jpeg">
                     <img loading="lazy" src="build/img/blog3.jpg" alt="Texto Entrada Blog">
                 </picture>
             </div>
@@ -67,9 +67,9 @@
         <article class="entrada-blog">
             <div class="imagen">
                 <picture>
-                    <source srcset="../build/img/blog4.webp" type="image/webp">
-                    <source srcset="../build/img/blog4.jpg" type="image/jpeg">
-                    <img loading="lazy" src="../build/img/blog4.jpg" alt="Texto Entrada Blog">
+                    <source srcset="http://localhost/bienesraicesMVC/public/build/img/blog4.webp" type="image/webp">
+                    <source srcset="http://localhost/bienesraicesMVC/public/build/img/blog4.jpg" type="image/jpeg">
+                    <img loading="lazy" src="http://localhost/bienesraicesMVC/public/build/img/blog4.jpg" alt="Texto Entrada Blog">
                 </picture>
             </div>
 

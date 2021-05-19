@@ -51,7 +51,7 @@
                 
             </div> <!--.barra-->
 
-            <!-- <?php echo $inicio ? "<h1>Venta de Casas De Lujo y Apartamentos Exclusivos</h1>" : ''; ?> -->
+            <?php echo $inicio ? "<h1 data-cy='heading-sitio'>Venta de Casas De Lujo y Apartamentos Exclusivos</h1>" : ''; ?>
 
         </div>
     </header>
