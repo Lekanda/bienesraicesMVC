@@ -5,7 +5,7 @@
 </main>
 
 <section class="seccion contenedor">
-    <h2>Casas y Fincas en Venta</h2>
+    <h2 data-cy="heading-propiedades">Casas y Fincas en Venta</h2>
     <?php
         include 'listado.php';
     ?>
