@@ -11,7 +11,7 @@
     ?>
 
     <div class="alinear-derecha">
-        <a href="/bienesraicesMVC/public/index.php/propiedades" class="boton-verde">Ver Todas</a>
+        <a data-cy="todas-propiedades" href="/bienesraicesMVC/public/index.php/propiedades" class="boton-verde">Ver Todas</a>
     </div>
 </section>
 
