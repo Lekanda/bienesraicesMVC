@@ -1,5 +1,5 @@
 /// <reference types="cypress"/>
-// Da mejor autocompletado
+// Da mejor autocompletado de Cypress en V.Studio
 describe('Carga la pagina principal INDEX', () =>{
     it('Prueba el Header de INDEX', () => {
         cy.visit('/');
@@ -33,7 +33,7 @@ describe('Carga la pagina principal INDEX', () =>{
         cy.get('[data-cy="enlace-propiedad"]').first().click();// Click a Propiedad
         cy.get('[data-cy="titulo-propiedad"]').should('exist'); // Titulo de Propiedad en propiedad.php
 
-        cy.wait(1000); // Espera un segundo
+        // cy.wait(1000); // Espera un segundo
         cy.go('back'); // Retorna a la pagina de Index
     });
 
@@ -46,7 +46,7 @@ describe('Carga la pagina principal INDEX', () =>{
         cy.get('[data-cy="todas-propiedades"]').click();
         cy.get('[data-cy="heading-propiedades"]').invoke('text').should('equal','Casas y Fincas en Venta');
         
-        cy.wait(1000);
+        // cy.wait(1000);
         cy.go('back');
         
     });
@@ -64,10 +64,18 @@ describe('Carga la pagina principal INDEX', () =>{
         cy.get('[data-cy="heading-contacto"]').should('exist');
         cy.get('[data-cy="heading-contacto"]').invoke('text').should('equal', 'Contacto');
 
-        cy.wait(1000);
-        cy.visit('back');// Visit por que hemos entrado en la pagina contacto con .then. Si no seria go
+        // cy.wait(1000);
+        cy.visit('');// Visit por que hemos entrado en la pagina contacto con .then. Si no seria go
+    });
 
-        
+    it('Prueba los Testimoniales y el Blog', () => {
+        cy.get('[data-cy="blog"]').should('exist');
+        cy.get('[data-cy="blog"]').find('h3').invoke('text').should('equal', 'Nuestro Blog');
+        cy.get('[data-cy="blog"]').find('img').should('have.length', 2);
+
+        cy.get('[data-cy="testimoniales"]').should('exist');
+        cy.get('[data-cy="testimoniales"]').find('h3').invoke('text').should('equal', 'Opiniones');
+        cy.get('[data-cy="testimoniales"]').find('h3').invoke('text').should('not.equal', 'Mis Opiniones');
 
     });
 });
