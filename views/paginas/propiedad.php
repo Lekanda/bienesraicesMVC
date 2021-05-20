@@ -1,6 +1,6 @@
 <main class="contenedor seccion contenido-centrado">
     <h1 data-cy="titulo-propiedad"><?php echo $propiedad->titulo; ?></h1>
-    <img loading="lazy" src="imagenes/<?php echo $propiedad->imagen; ?>" alt="imagen de la propiedad">
+    <img loading="lazy" src="http://localhost/bienesraicesMVC/public/imagenes/<?php echo $propiedad->imagen; ?>" alt="imagen de la propiedad">
 
     <div class="resumen-propiedad">
         <p class="precio">€ <?php echo $propiedad->precio; ?></p>
