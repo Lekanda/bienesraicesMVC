@@ -1,4 +1,4 @@
-/// <references types="cypress"/>
+/// <reference types="cypress"/>
 // Da mejor autocompletado
 describe('Carga la pagina principal INDEX', () =>{
     it('Prueba el Header de INDEX', () => {
@@ -45,10 +45,29 @@ describe('Carga la pagina principal INDEX', () =>{
 
         cy.get('[data-cy="todas-propiedades"]').click();
         cy.get('[data-cy="heading-propiedades"]').invoke('text').should('equal','Casas y Fincas en Venta');
-
-
+        
         cy.wait(1000);
         cy.go('back');
+        
+    });
+    
+    it('Prueba el bloque de Contactanos hacia Contacto', () => {
+        cy.get('[data-cy="imagen-contacto"]').should('exist');
+        cy.get('[data-cy="imagen-contacto"]').find('h2').invoke('text').should('equal', 'Encuentra la casa de tus sueños');
+        cy.get('[data-cy="imagen-contacto"]').find('p').invoke('text').should('equal', 'Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad');
+        
+        cy.get('[data-cy="imagen-contacto"]').find('a').invoke('attr','href')
+            .then(href => {
+                cy.visit(href)
+            });// Va a formulario contacto
+            
+        cy.get('[data-cy="heading-contacto"]').should('exist');
+        cy.get('[data-cy="heading-contacto"]').invoke('text').should('equal', 'Contacto');
+
+        cy.wait(1000);
+        cy.visit('back');// Visit por que hemos entrado en la pagina contacto con .then. Si no seria go
+
+        
 
     });
 });

@@ -15,10 +15,10 @@
     </div>
 </section>
 
-<section class="imagen-contacto">
-    <h2>Encuentra la casa de tus sueños</h2>
+<section class="imagen-contacto" data-cy="imagen-contacto">
+    <h2 >Encuentra la casa de tus sueños</h2>
     <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad</p>
-    <a href="contacto.php" class="boton-amarillo">Contactános</a>
+    <a href="/contacto" class="boton-amarillo">Contactános</a>
 </section>
 
 <div class="contenedor seccion seccion-inferior">
