@@ -1,5 +1,5 @@
 {
-    "baseUrl" : "http://localhost/bienesraicesMVC/public/index.php",
-    "viewportWidth": 1200,
-    "viewportHeight": 3060
+    "baseUrl" : "http://localhost:3000",
+    "viewportWidth": 1400,
+    "viewportHeight": 3260
 }
