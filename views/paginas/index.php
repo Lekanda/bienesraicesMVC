@@ -21,8 +21,8 @@
     <a href="/contacto" class="boton-amarillo">Contactános</a>
 </section>
 
-<div class="contenedor seccion seccion-inferior">
-    <section class="blog">
+<div  class="contenedor seccion seccion-inferior">
+    <section data-cy="blog" class="blog">
         <h3>Nuestro Blog</h3>
 
         <article class="entrada-blog">
@@ -68,7 +68,7 @@
         </article>
     </section>
 
-    <section class="testimoniales">
+    <section data-cy="testimoniales" class="testimoniales">
         <h3>Opiniones</h3>
 
         <div class="testimonial">
