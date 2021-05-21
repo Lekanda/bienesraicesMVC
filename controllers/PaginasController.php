@@ -135,9 +135,9 @@ class PaginasController {
 
             // Enviar el email
             if ($mail->send()) {
-                $mensaje = "Peticion Contacto enviada correctamente";
+                $mensaje = "Mensaje Enviado Correctamente";
             } else {
-                $mensaje = "Peticion Contacto fallo al enviarse";
+                $mensaje = "Mensaje Fallo al Enviarse";
             }
         }
         
