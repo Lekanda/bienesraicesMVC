@@ -36,9 +36,9 @@
                 </div>
                 <div class="derecha">
                     <img class="dark-mode-boton" src="http://localhost/bienesraicesMVC/public/build/img/dark-mode.svg">
-                    <nav class="navegacion">
+                    <nav class="navegacion" data-cy="navegacion-header">
                         <a href="/bienesraicesMVC/public/index.php/nosotros">Nosotros</a>
-                        <a href="/bienesraicesMVC/public/index.php/propiedades">Anuncios</a>
+                        <a href="/bienesraicesMVC/public/index.php/propiedades">Propiedades</a>
                         <a href="/bienesraicesMVC/public/index.php/blog">Blog</a>
                         <a href="/bienesraicesMVC/public/index.php/contacto">Contacto</a>
                         <?php if ($auth) : ?>
@@ -63,15 +63,15 @@
 
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
+            <nav class="navegacion" data-cy="navegacion-footer">
                 <a href="/bienesraicesMVC/public/index.php/nosotros">Nosotros</a>
-                <a href="/bienesraicesMVC/public/index.php/propiedades">Anuncios</a>
+                <a href="/bienesraicesMVC/public/index.php/propiedades">Propiedades</a>
                 <a href="/bienesraicesMVC/public/index.php/blog">Blog</a>
                 <a href="/bienesraicesMVC/public/index.php/contacto">Contacto</a>
             </nav>
         </div>
 
-        <p class="copyright">Todos los derechos Reservados <?php echo date('Y'); ?> &copy;</p>
+        <p data-cy="copyright" class="copyright">Todos los derechos Reservados <?php echo date('Y'); ?> &copy;</p>
     </footer>
     <script src="http://localhost/bienesraicesMVC/public/build/js/bundle.min.js"></script>
 </body>
