@@ -11,7 +11,7 @@
         <img loading="lazy" src="http://localhost/bienesraicesMVC/public/build/img/destacada3.jpg" alt="Imagen Contacto">
     </picture>
 
-    <h2>Llene el formulario de Contacto</h2>
+    <h2 data-cy="heading-formulario">Llene el formulario de Contacto</h2>
 
     <form class="formulario" action="http://localhost/bienesraicesMVC/public/index.php/contacto" method="POST">
         <fieldset>
