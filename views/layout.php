@@ -36,9 +36,9 @@
                 </div>
                 <div class="derecha">
                     <img class="dark-mode-boton" src="/build/img/dark-mode.svg">
-                    <nav class="navegacion">
+                    <nav data-cy="navegacion-header" class="navegacion">
                         <a href="/nosotros">Nosotros</a>
-                        <a href="/propiedades">Anuncios</a>
+                        <a href="/propiedades">Propiedades</a>
                         <a href="/blog">Blog</a>
                         <a href="/contacto">Contacto</a>
                         <?php if ($auth) : ?>
@@ -63,15 +63,15 @@
 
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.php">Nosotros</a>
-                <a href="anuncios.php">Anuncios</a>
-                <a href="blog.php">Blog</a>
-                <a href="contacto.php">Contacto</a>
+            <nav data-cy="navegacion-footer" class="navegacion">
+                <a href="/nosotros">Nosotros</a>
+                <a href="/propiedades">Propiedades</a>
+                <a href="/blog">Blog</a>
+                <a href="/contacto">Contacto</a>
             </nav>
         </div>
 
-        <p class="copyright">Todos los derechos Reservados <?php echo date('Y'); ?> &copy;</p>
+        <p data-cy="copyright" class="copyright">Todos los derechos Reservados <?php echo date('Y'); ?> &copy;</p>
     </footer>
     <script src="../build/js/bundle.min.js"></script>
 </body>
