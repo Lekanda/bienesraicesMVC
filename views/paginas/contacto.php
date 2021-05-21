@@ -2,7 +2,7 @@
     <h1 data-cy="heading-contacto">Contacto</h1>
 
     <?php if ($mensaje) { ?>
-           <p class='alerta exito'> <?php echo $mensaje ?></p>
+           <p data-cy="alerta-envio-formulario" class='alerta exito'><?php echo $mensaje ?></p>
     <?php }?>
 
     <picture>
@@ -13,7 +13,7 @@
 
     <h2 data-cy="heading-formulario">Llene el formulario de Contacto</h2>
 
-    <form class="formulario" action="http://localhost/bienesraicesMVC/public/index.php/contacto" method="POST">
+    <form data-cy="formulario-contacto" class="formulario" action="http://localhost/bienesraicesMVC/public/index.php/contacto" method="POST">
         <fieldset>
             <legend>Información Personal</legend>
 
